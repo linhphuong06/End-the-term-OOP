@@ -62,6 +62,7 @@ public class UpdatePass extends JFrame {
 		studentDetails.setForeground(Color.BLACK);
 		studentDetails.setFont(new Font("Perpetua Titling MT", Font.BOLD, 22));
 
+
 		JLabel PASS = new JLabel("Password new");
 		PASS.setForeground(Color.BLACK);
 		PASS.setFont(new Font("Perpetua Titling MT", Font.BOLD, 14));
@@ -69,7 +70,7 @@ public class UpdatePass extends JFrame {
 		pass = new JTextField();
 		pass.setColumns(10);
 
-        JLabel PASS_NEW = new JLabel("Password");
+		JLabel PASS_NEW = new JLabel("Password");
 		PASS_NEW.setForeground(Color.BLACK);
 		PASS_NEW.setFont(new Font("Perpetua Titling MT", Font.BOLD, 14));
 

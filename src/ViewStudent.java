@@ -68,7 +68,7 @@ public class ViewStudent extends JFrame {
                     con = DriverManager.getConnection("jdbc:mysql://localhost/quanlydiem", "root", "060103");
                     Statement stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
                     ResultSet rs = stmt.executeQuery(
-                            "SELECT  * FROM students WHERE id = " + id);
+                            "SELECT id, st_name, email, address, phone, GPA FROM students WHERE id = " + id);
 
                     if (!rs.isBeforeFirst()) {
                         JOptionPane.showMessageDialog(null, "Student ID not found!");

@@ -84,7 +84,7 @@ public class Login extends JFrame {
 					ResultSet rs = pstmt.executeQuery();
 					if (rs.next()) {
 						// Giá trị "id" đã được tìm thấy trong cơ sở dữ liệu
-						String value = rs.getString("pass"); // Lấy giá trị của cột đầu tiên trong ResultSet
+						String value = rs.getString("pass"); 
     					if(password.getText().equals(value)){
 							MenuStudent menuPage = new MenuStudent(username.getText(), password.getText());
 							menuPage.show();
